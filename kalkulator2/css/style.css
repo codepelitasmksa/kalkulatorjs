@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+.title h1 {
+    text-align: center;
+    font-size: 50px;
+}
+.flex-container-column {
+    display: flex;
+    /* properti pendukung */
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: right;
+}
+.flex-container-row {
+    display: flex;
+}
+.button {
+    flex-basis: 25%;
+    /* properti pendukung */
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 40px;
+    border: 1px solid black;
+    background: -webkit-linear-gradient(top, #d2d2d2, #ddd);
+    cursor: pointer;
+}
+.button.operator {
+    font-size: 2rem;
+}
+.double {
+    flex-basis: 50%;
+}
+
+.display {
+    color: white;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #333;
+    border: 1px solid black;
+    font-size: 2em;
+}
+.operator,
+.negative,
+.equals {
+    background: cadetblue;
+}
+.button:hover {
+    font-weight: bold;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+/* styling history panel */
+.history {
+    width: 70%;
+    margin: 30px auto 0 auto;
+    overflow: scroll;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+th,
+td {
+    text-align: center;
+    padding: 16px;
+}
+th {
+    background-color: cadetblue;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #d2d2d2;
+}
+
+.back {
+    width: 70%;
+    margin: 30px auto;
+}
+
+.back a {
+    font-size: 25px;
+}
+
+/* responsive */
+/* media query jika lebar device kurang dari 513px/handphone */
+@media screen and (max-width: 513px) {
+    .button {
+        padding: 10px;
+    }
+
+    .history {
+        width: 100%;
+    }
+}
+
